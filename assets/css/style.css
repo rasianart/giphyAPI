@@ -1,0 +1,58 @@
+.btn {
+	background-color: transparent;
+	border-color: grey;
+	margin-left: 5px;
+}
+#buttonHolder{
+	text-align: center;
+	margin-bottom: 15px;
+}
+#chosenGif {
+	border: 1px solid white;
+}
+#clearFav {
+	margin-top: 100px;
+	margin-bottom: 20px;
+}
+#form {
+	text-align: center;
+}
+#header {
+	font-family: 'Poiret One', cursive;
+	text-align: center;
+}
+.gif {
+	border: 1px solid black;
+}
+.image-box {
+	display: inline-block;
+	float: left;
+	overflow: hidden;
+	margin-left: 15px;
+	margin-bottom: 20px;
+}
+p {
+	font-family: 'Poiret One', cursive;
+}
+.play, .pause, .favorite{
+	background-color: white;
+}
+#search {
+	margin-left: 42%;
+	margin-top: 100px;
+	margin-bottom: 20px;
+}
+#stored {
+	text-align: center;
+	margin-left: 47%;
+	margin-top: 15px;
+}
+#submit {
+	border-radius: 5px;
+	background-color: transparent;
+}
+.ui-dialog {
+	position: absolute;
+	margin-left: 33%;
+	margin-bottom: 300px;
+}
