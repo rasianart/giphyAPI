@@ -138,8 +138,9 @@ var places = {
 	popActivate: function() {
 	    $(document).on('click', 'img.gif', function(event) {
 			event.preventDefault();
+			$('#chosenGif').empty();
+			places.popUp();
 			var animate = $(this).data('animate');
-			console.log(animate);
 			var still = $(this).data('still');
 			$('#chosenGif').attr('src', animate);
 	        $( "#dialog-animated" ).dialog( "open" );
@@ -155,10 +156,9 @@ var places = {
 	        		stillGif: still
 	        	};
 	        	places.gifArray.push(gifObj);
-	        	console.log(places.gifArray);
 	        	localStorage.clear();
 	        	localStorage.setItem("gifs", JSON.stringify(places.gifArray));
-	        $( "#dialog-animated" ).dialog( "close" );
+	        	$('#dialog-animated').dialog('close');
 	        });
 	    });
 	},
