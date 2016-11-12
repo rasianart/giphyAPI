@@ -50,6 +50,7 @@ var places = {
   			var values = $('#input').val();
   			event.preventDefault();
   			places.createButton(values);
+  			places.placesToD.push(values);
   			$('#input').val('');
 		});
 	},
